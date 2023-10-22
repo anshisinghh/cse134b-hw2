@@ -178,6 +178,18 @@
                     </ol>
                 </aside>
                 <br>
+                <button onclick="showContent()">Show hidden content</button>
+                <template>
+                    <p>BOO!</p>
+                </template>
+                <script>
+                    function showContent() {
+                        let temp = document.getElementsByTagName("template")[0];
+                        let clon = temp.content.cloneNode(true);
+                        document.body.appendChild(clon);
+                    }
+                </script>
+                <br>
                 <table>
                     <caption>Table 1</caption>
                     <colgroup>
@@ -210,18 +222,6 @@
                     </pre>
                 <br>
                 <iframe src="https://ucsd.edu/" title="UCSD's Website" width="500" height=500></iframe>
-                <br>
-                <button onclick="showContent()">Show hidden content</button>
-                <template>
-                    <p>BOO!</p>
-                </template>
-                <script>
-                    function showContent() {
-                        let temp = document.getElementsByTagName("template")[0];
-                        let clon = temp.content.cloneNode(true);
-                        document.body.appendChild(clon);
-                    }
-                </script>
             </section>
         </main>
         <footer>
