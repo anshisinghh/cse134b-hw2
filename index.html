@@ -20,7 +20,7 @@
         <main>
             <section id="aboutme">
                 <h2>About Me</h2>
-                <p>My name is Anshi and I am a third-year student at UC San Diego, majoring in <b>Computer Science</b>. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have industry level internship experience as a student consultant who worked on a project on blockchain technology. <br> <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
+                <p>My name is Anshi and I am a third-year student at UC San Diego, majoring in <b>Computer Science</b>. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have industry level internship experience as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
                 <figure>
                     <img src="headshot.png" alt="Headshot" width="250" height="100">
                     <figcaption>Fig 1. This is my headshot.</figcaption>
@@ -78,6 +78,7 @@
                 <audio controls>
                     <source src="sample-audio.mp3" type="audio/mp3">
                 </audio>
+                <br>
                 <video controls>
                     <source src="sample-video.mp4" tyype="video/mp4">
                 </video>
@@ -88,7 +89,41 @@
                         <li>However, the content is still related to the overall topic</li>
                     </ol>
                 </aside>
-
+                <form>
+                    <fieldset>
+                        <legend>Connect with me!</legend>
+                        <label>Select your expertise:</label>
+                        <input type="radio" id="beginner" name="expertise">
+                        <label for="beginner">Beginner</label>
+                        <input type="radio" id="intermediate" name="expertise">
+                        <label for="intermediate">Intermediate</label>
+                        <input type="radio" id="advanced" name="expertise">
+                        <label for="advanced">Advanced</label>
+                        <br>
+                        <label for=""contry>Select your country:</label>
+                        <select id="country">
+                            <optgroup label="North America">
+                                <option value="canada">Canada</option>
+                                <option value="us">US</option>
+                                <option value="mexico">Mexico</option>
+                            </optgroup>
+                            <optgroup label="Asia">
+                                <option value="russia">Russia</option>
+                                <option value="china">China</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label for="continent">Select your Continent:</label>
+                        <datalist id="continents">
+                            <option value="Africa"></option>
+                            <option value="North America"></option>
+                            <option value="South America"></option>
+                        </datalist>
+                        <input list="continents" id="continent">
+                        <br>
+                        <textarea>Your comment here...</textarea>
+                    </fieldset>
+                </form>
             </section>
         </main>
         <footer>
