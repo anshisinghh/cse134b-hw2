@@ -167,6 +167,20 @@
                     <source src="sample-audio.mp3" type="audio/mp3">
                 </audio>
                 <br>
+                <script>
+                    window.addEventListener('load', function() {
+                        let canvas = document.getElementById('canvas');
+                        let context = canvas.getContext('2d');
+                        context.strokeStyle = 'blue';
+                        context.strokeRect (10, 10, 150, 50);
+                        context.fillStyle = 'rgba(218,0,0,0.4)'
+                        context.fillRect (150, 30, 75, 75);
+                    });
+                </script>
+                <canvas id="canvas" width="300" height ="300" >
+                    <strong>Canvas Supporting Browser Required</strong> 
+                </canvas>
+                <br>
                 <video controls>
                     <source src="sample-video.mp4" tyype="video/mp4">
                 </video>
