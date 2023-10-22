@@ -199,7 +199,7 @@
                 </table>
                 <br>
                 <picture>
-                    <source srcset="library1.jpeg" type="image/jpeg">
+                    <source srcset="library.jpeg" type="image/jpeg">
                     <source srcset="library2.jpg" type="image/jpg">
                     <img src="library3.png" alt="Giesel Library" width="200" height=auto>
                 </picture>
@@ -210,6 +210,18 @@
                     </pre>
                 <br>
                 <iframe src="https://ucsd.edu/" title="UCSD's Website" width="500" height=500></iframe>
+                <br>
+                <button onclick="showContent()">Show hidden content</button>
+                <template>
+                    <p>BOO!</p>
+                </template>
+                <script>
+                    function showContent() {
+                        let temp = document.getElementsByTagName("template")[0];
+                        let clon = temp.content.cloneNode(true);
+                        document.body.appendChild(clon);
+                    }
+                </script>
             </section>
         </main>
         <footer>
