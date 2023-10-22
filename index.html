@@ -20,6 +20,10 @@
         <main>
             <section id="aboutme">
                 <h2>About Me</h2>
+                <details>
+                    <summary>Hello!</summary>
+                    If this is your first time here, please like and share!
+                </details>
                 <p>My name is Anshi. I am a Computer Science student at UC San Diego, with an expected graduation date of <b>June 2025</b>. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have industry level internship experience as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
                 <figure>
                     <img src="headshot.png" alt="Headshot" width="250" height="100">
@@ -32,6 +36,48 @@
                     <li>LinkedIn: <a href="https://www.linkedin.com/in/anshisingh/">linkedin.com/in/anshisingh</a></li>
                     <li>GitHub: <a href="https://github.com/anshisinghh">github.com/anshisinghh</a></li>
                 </ul>
+                <form>
+                    <fieldset>
+                        <legend>Connect with me!</legend>
+                        <label>Select your level:</label>
+                        <input type="radio" id="student" name="level">
+                        <label for="student">Student</label>
+                        <input type="radio" id="recruiter" name="level">
+                        <label for="recruiter">Recruiter</label>
+                        <input type="radio" id="industry" name="level">
+                        <label for="industry">Industry</label>
+                        <br>
+                        <label for="location">Select your location:</label>
+                        <select id="location">
+                            <optgroup label="California">
+                                <option value="norcal">North California</option>
+                                <option value="socal">Southern California</option>
+                                <option value="central">Central Valley</option>
+                            </optgroup>
+                            <optgroup label="Other">
+                                <option value="east">East Coast</option>
+                                <option value="midwest">Midwest</option>
+                                <option value="southern">Southern US</option>
+                            </optgroup>
+                        </select>
+                        <br>
+                        <label for="field">Select your field:</label>
+                        <datalist id="field">
+                            <option value="Backend"></option>
+                            <option value="Frontend"></option>
+                            <option value="Fullstack"></option>
+                            <option value="IT"></option>
+                            <option value="Development"></option>
+                            <option value="Product Management"></option>
+                        </datalist>
+                        <input list="field" id="field">
+                        <br>
+                        <label for="information">Add your details:</label>
+                        <textarea id="information">Your details here...</textarea>
+                        <br>
+                        <button type="submit">Save</button>
+                    </fieldset>
+                </form>
             </section>
             <section id="education">
                 <h2>Education</h2>
@@ -39,7 +85,7 @@
                 <p>Bachelor of Science, Computer Science</p>
                 <p>September 2023 - June 2025</p>
                 <h4>Relevant Coursework</h4>
-                <p>Algorithm Design and Analysis, Data Structures, Advanced Programming, Artificial Intelligence, Computer Organization and Assembly Language, Discrete Mathematics, Linear Algebra, Differential Equations, Vector Calculus, Probability & Statistics, Circuit Theory, Statics & Dynamics, Classical Physics.</p>
+                <p>Algorithm Design and Analysis, Data Structures, Advanced Programming, Web Client Languages, Artificial Intelligence, Computer Organization and Assembly Language, Discrete Mathematics, Linear Algebra, Differential Equations, Vector Calculus, Probability & Statistics, Circuit Theory, Statics & Dynamics, Classical Physics.</p>
             </section>
             <section id="experiences">
                 <h2>Experiences</h2>
@@ -129,53 +175,11 @@
                         <li>However, the content is still related to the overall topic</li>
                     </ol>
                 </aside>
-                <form>
-                    <fieldset>
-                        <legend>Connect with me!</legend>
-                        <label>Select your expertise:</label>
-                        <input type="radio" id="beginner" name="expertise">
-                        <label for="beginner">Beginner</label>
-                        <input type="radio" id="intermediate" name="expertise">
-                        <label for="intermediate">Intermediate</label>
-                        <input type="radio" id="advanced" name="expertise">
-                        <label for="advanced">Advanced</label>
-                        <br>
-                        <label for=""contry>Select your country:</label>
-                        <select id="country">
-                            <optgroup label="North America">
-                                <option value="canada">Canada</option>
-                                <option value="us">US</option>
-                                <option value="mexico">Mexico</option>
-                            </optgroup>
-                            <optgroup label="Asia">
-                                <option value="russia">Russia</option>
-                                <option value="china">China</option>
-                            </optgroup>
-                        </select>
-                        <br>
-                        <label for="continent">Select your Continent:</label>
-                        <datalist id="continents">
-                            <option value="Africa"></option>
-                            <option value="North America"></option>
-                            <option value="South America"></option>
-                        </datalist>
-                        <input list="continents" id="continent">
-                        <br>
-                        <label for="sample-text-area">Add any comments:</label>
-                        <textarea id="sample-text-area">Your comment here...</textarea>
-                        <br>
-                        <button type="submit">Save</button>
-                    </fieldset>
-                </form>
-                <details>
-                    <summary>Hello!</summary>
-                    If this is your first time here, please like and share!
-                </details>
                 <br>
                 <table>
                     <caption>Table 1</caption>
                     <tr>
-                        <th>Intredients</th>
+                        <th>Ingredients</th>
                         <th>Quantity</th>
                     </tr>
                     <tr>
