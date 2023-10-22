@@ -171,14 +171,14 @@
                     window.addEventListener('load', function() {
                         let canvas = document.getElementById('canvas');
                         let context = canvas.getContext('2d');
-                        context.strokeStyle = 'blue';
-                        context.strokeRect (10, 10, 150, 50);
-                        context.fillStyle = 'rgba(218,0,0,0.4)'
-                        context.fillRect (150, 30, 75, 75);
+                        context.strokeStyle = 'green';
+                        context.strokeCircle(20, 20, 200, 90);
+                        context.fillStyle = 'rgba(255,165,30,0.4)'
+                        context.fillCircle(200, 10, 90, 75);
                     });
                 </script>
-                <canvas id="canvas" width="300" height ="300" >
-                    <strong>Canvas Supporting Browser Required</strong> 
+                <canvas id="canvas" width="400" height ="400" >
+                    <p>Canvas Supporting Browser Required</p> 
                 </canvas>
                 <br>
                 <video controls>
