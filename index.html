@@ -24,7 +24,7 @@
             <section id="aboutme">
                 <h2>About Me</h2>
                 <details>
-                    <summary>Hello!</summary>
+                    <summary><code>print("Hello!")</code></summary>
                     If this is your first time here, please like and share!
                 </details>
                 <p>My name is <span class="highlight">Anshi</span>. I am a <i>Computer Science</i> student at UC San Diego, with an expected graduation date of <b>June 2025</b>. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have <em>industry level internship experience</em> as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
@@ -156,16 +156,55 @@
                 <h2>Skills</h2>
                 <h3>Programming Languages</h3>
                 <p>C/C++, Python, HTML, MIPS Assembly, Swift, Typescript</p>
+                <table>
+                    <caption>Level</caption>
+                    <colgroup>
+                        <col style="background-color: lightgray;">
+                        <col style="background-color: lightblue;">
+                    </colgroup>
+                    <tr>
+                        <th>Language</th>
+                        <th>Skill Level</th>
+                    </tr>
+                    <tr>
+                        <td>C/C++</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>Python</td>
+                        <td>Advanced</td>
+                    </tr>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Proficent</td>
+                    </tr>
+                    <tr>
+                        <td>MIPS Assembly</td>
+                        <td>Beginner</td>
+                    </tr>
+                    <tr>
+                        <td>Swift</td>
+                        <td>Intermediate</td>
+                    </tr>
+                    <tr>
+                        <td>Typescript</td>
+                        <td>Proficent</td>
+                    </tr>
+                </table>
+                <br>
                 <h3>Databases & ORMs</h3>
                 <p>SQL (Postgres), TypeORM</p>
                 <h3>Developer Tools & Platforms</h3>
                 <p>AWS, Ethereum, Git, Docker, VS Code</p>
                 <h3>Soft Skills</h3>
-                <p>Communication, Teamwork, Problem Solving</p>
+                <p>Communication, Teamwork, Problem Solving</p>       
             </section>
             <section id="experiments">
                 <h2>Experiments</h2>
-                <code>print("Hello, World!")</code>
+                <pre>
+                    def greet():
+                        print("Hello, World!")
+                </pre>
                 <br>
                 <audio controls>
                     <source src="sample-audio.mp3" type="audio/mp3">
@@ -198,7 +237,19 @@
                     <canvas id="canvas" width="400" height="400" >
                         <p>Canvas Supporting Browser Required</p> 
                     </canvas>
+                    <br>
+                    <svg height="100" width= "100%">
+                        <circle cx="50" cy="50" r="25" fill="red" stroke="purple" stroke-width="2"/>
+                    </svg>
                 </div>
+                <br>
+                <picture>
+                    <source srcset="library.jpeg" type="image/jpeg">
+                    <source srcset="library2.jpg" type="image/jpg">
+                    <img src="library3.png" alt="Giesel Library" width="200">
+                </picture>
+                <br>
+                <iframe src="https://ucsd.edu/" title="UCSD's Website" width="500" height=500></iframe>
                 <br>
                 <aside><p>This is content of an aside tag. The purpose is:</p>
                     <ol>
@@ -214,43 +265,6 @@
                 </template>
                 <p>This is content after the template.</p>
                 <br>
-                <svg height="100" width= "100%">
-                    <circle cx="50" cy="50" r="25" fill="red" stroke="purple" stroke-width="2"/>
-                </svg>
-                <br>
-                <table>
-                    <caption>Table 1</caption>
-                    <colgroup>
-                        <col style="background-color: lightgray;">
-                        <col style="background-color: lightblue;">
-                    </colgroup>
-                    <tr>
-                        <th>X-Value</th>
-                        <th>Y-Value</th>
-                    </tr>
-                    <tr>
-                        <td>a</td>
-                        <td>b</td>
-                    </tr>
-                    <tr>
-                        <td>c</td>
-                        <td>d</td>
-                    </tr>
-                </table>
-                <br>
-                <picture>
-                    <source srcset="library.jpeg" type="image/jpeg">
-                    <source srcset="library2.jpg" type="image/jpg">
-                    <img src="library3.png" alt="Giesel Library" width="200">
-                </picture>
-                <br>
-                <pre>
-                    def greet():
-                        print("Hello, World!")
-                </pre>
-                <br>
-                <iframe src="https://ucsd.edu/" title="UCSD's Website" width="500" height=500></iframe>
-                <br>
                 <p>Extra Credit</p>
                 <ol>
                     <li>
@@ -264,7 +278,7 @@
                             </msup>
                         </math>
                     </li>
-                    <li>MathML could not be used by developers because it was not supported by browser vendors both on the spec and implementation level. MathML Core is a subset and has increased implmentatoin details from LaTeX and Open Font Format, as a result, it can now be used on browsers and works with web client languages.</li>  
+                    <li>MathML could not be used by developers because it was not supported by browser vendors both on the spec and implementation level. MathML Core is a subset and has increased implementation details from LaTeX and Open Font Format, as a result, it can now be used on browsers and works with web client languages.</li>  
                 </ol>
                 <br>
                 <a href="#top">Back to Top</a>
