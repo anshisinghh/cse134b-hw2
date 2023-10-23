@@ -22,13 +22,12 @@
             <section id="aboutme">
                 <h2>About Me</h2>
                 <details>
-                    <summary><code>print("Hello, World!")</code></summary>
+                    <summary>Hello!</summary>
                     If this is your first time here, please like and share!
-                    
                 </details>
                 <p>My name is <span class="highlight">Anshi</span>. I am a <i>Computer Science</i> student at UC San Diego, with an expected graduation date of <b>June 2025</b>. I am passionate about programming and both full-stack and back-end development, with experiences in mobile app development, as well. I have done extensive coursework in data structures, algorithms, and programming in Python and C++. In addition, I have <em>industry level internship experience</em> as a student consultant who worked on a project on blockchain technology. <strong>Currently seeking a SWE internship for summer 2024.</strong></p>
                 <figure>
-                    <img src="headshot.png" alt="Headshot" width="200">
+                    <img src="headshot.png" alt="Anshi's Headshot" width="200">
                     <figcaption>Fig 1. This is my headshot.</figcaption>
                 </figure>
                 <h3>Contact Info</h3>
@@ -93,7 +92,7 @@
             <section id="experiences">
                 <h2>Experiences</h2>
                 <h3>Work Experience</h3>
-                <div class="experience1">
+                <article class="experience1">
                     <h4>Open Avenues, Orb Labs</h4>
                     <p>Student Consultant, Software Development</p>
                     <p>Internship</p>
@@ -105,8 +104,8 @@
                         <li>Leveraged external APIs, including Alchemy, for querying data from various blockchain networks.</li>
                         <li>Successfully implemented listeners to monitor blockchain events, extracting and parsing data to use for calculating and normalizing transaction costs and related metrics.</li>
                     </ul>
-                </div>
-                <div class="experience2">
+                </article>
+                <article class="experience2">
                     <h4>University of California, Merced</h4>
                     <p>Undergraduate CSE Tutor</p>
                     <p>Part-Time</p>
@@ -116,16 +115,16 @@
                         <li>Assisted students in debugging code and identifying logical errors, enhancing their ability to troubleshoot and resolve programming issues.</li>
                         <li>Facilitated learning by teaching complex algorithms and problem-solving techniques.</li>
                     </ul>
-                </div>
+                </article>
                 <h3>Projects</h3>
-                <div class="project1">
+                <article class="project1">
                     <h4>Twitter, Parstagram, and Flix App</h4>
                     <ul>
                         <li>Utilized Swift along with various public APIs (including Twitter API, TMDB API, and a Parse Server on Back4app) to develop three distinct apps resembling Twitter, Instagram, and a movie browsing platform.</li>
                         <li>Implemented functionalities such as retweeting, posting tweets/pictures, multi-displays, and user login functionality.</li>
                     </ul>
-                </div>
-                <div class="project2">
+                </article>
+                <article class="project2">
                     <h4>Would You Rather - Social Media App</h4>
                     <ul>
                         <li>Used Swift to develop an original app where users can create and interact with would you rather questions.</li>
@@ -133,23 +132,23 @@
                         <li>Utilized Figma to create front-end designs, including wireframes and the app logo, enhancing overall user experience.</li>
                         <li>Employed Git for project management to delegate tasks, create plans and frameworks - ensuring efficient collaboration.</li>
                     </ul>
-                </div>
-                <div class="project3">
+                </article>
+                <article class="project3">
                     <h4>Car Search App</h4>
                     <ul>
                         <li>Collaborated in a hackathon to develop a program that matches user requirements with the best available car for sale.</li>
                         <li>Utilized the vehicle listings API by AutoDev to effectively design and enhance the process.</li>
                     </ul>
-                </div>
+                </article>
                 <h3>Certifications</h3>
-                <div class="certification1">
+                <article class="certification1">
                     <h4>iOS Mobile Development Course</h4>
                     <p>CodePath Certification</p>
                     <p>Fall 2022</p>
                     <ul>
                         <li>Completed a comprehensive project-based course on mobile app development, using Swift, focusing on the implementation of API clients.</li>
                     </ul>
-                </div>
+                </article>
             </section>
             <section id="skills">
                 <h2>Skills</h2>
@@ -164,35 +163,39 @@
             </section>
             <section id="experiments">
                 <h2>Experiments</h2>
+                <code>print("Hello, World!")</code>
+                <br>
                 <audio controls>
-                    <source src="sample-audio.mp3" type="audio/mp3">
+                    <source src="sample-audio.mp3" alt="Alarm Ringtone" type="audio/mp3">
                 </audio>
                 <br>
-                <script>
-                    window.addEventListener('load', function() {
-                        let canvas = document.getElementById('canvas');
-                        let context = canvas.getContext('2d');
-                        context.beginPath();
-                        context.moveTo(10, 50);
-                        context.lineTo(300, 200); 
-                        context.strokeStyle = 'green';
-                        context.lineWidth = 10; 
-                        context.stroke(); 
-                        context.beginPath();
-                        context.arc(300, 150, 50, 0, Math.PI * 2, true);
-                        context.strokeStyle = 'blue';
-                        context.lineWidth = 3;
-                        context.fillStyle = 'rgba(255,165,30,0.4)'
-                        context.fill();
-                        context.stroke();
-                    });
-                </script>
-                <canvas id="canvas" width="400" height ="400" >
-                    <p>Canvas Supporting Browser Required</p> 
-                </canvas>
+                <div class="drawing">
+                    <script>
+                        window.addEventListener('load', function() {
+                            let canvas = document.getElementById('canvas');
+                            let context = canvas.getContext('2d');
+                            context.beginPath();
+                            context.moveTo(10, 50);
+                            context.lineTo(300, 200); 
+                            context.strokeStyle = 'green';
+                            context.lineWidth = 10; 
+                            context.stroke(); 
+                            context.beginPath();
+                            context.arc(300, 150, 50, 0, Math.PI * 2, true);
+                            context.strokeStyle = 'blue';
+                            context.lineWidth = 3;
+                            context.fillStyle = 'rgba(255,165,30,0.4)'
+                            context.fill();
+                            context.stroke();
+                        });
+                    </script>
+                    <canvas id="canvas" width="400" height="400" >
+                        <p>Canvas Supporting Browser Required</p> 
+                    </canvas>
+                </div>
                 <br>
                 <video controls>
-                    <source src="sample-video.mp4" type="video/mp4">
+                    <source src="sample-video.mp4" alt="Earth Rotating" type="video/mp4">
                 </video>
                 <aside><p>This is content of an aside tag. The purpose is:</p>
                     <ol>
