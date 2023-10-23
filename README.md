@@ -8,16 +8,16 @@ The purpose of my site is to showcase my skills, experiences, and achievements t
 
 
 ### Site Diagram (10pts)
-
+()![sitediagram.png]
 
 ### Wireframe(s) (10pts)
-
+()![aboutmewireframe.png]
+()![educationwireframe.png]
 
 ### Technical Requirements (6pts)
 
 
 ### Content Requirements (6pts)
-
 
 
 ## Part 2 : HTML Only Execution (140pts + 15 pts Extra Credit) 
